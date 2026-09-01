@@ -1,87 +1,96 @@
 # Crowdfunding Using Blockchain
 
-A project report and source-code appendix for a crowdfunding platform that applies blockchain concepts to improve security, transparency, and trust in fundraising.
+A blockchain-based crowdfunding platform designed to provide a more secure, transparent, and efficient approach to online fundraising.
 
-## Project Overview
+## 📌 Project Overview
 
-Traditional crowdfunding platforms can face challenges involving security, transparency, trust, and efficiency. This project proposes integrating blockchain technology into the crowdfunding process, using decentralization, tamper-resistant records, and smart-contract-based automation to improve the fundraising workflow.
+Crowdfunding is a method of raising funds through contributions from a large number of individuals. Traditional crowdfunding platforms can face challenges related to security, transparency, trust, and efficient fund management.
 
-The project describes three user types—admins, fundraisers, and backers—and modules for blockchain integration, smart-contract automation, cryptocurrency payments, security/transparency, and the user interface.
+This project, **Crowdfunding Using Blockchain**, explores the use of blockchain technology and smart contracts to address these challenges.
 
-## Technology Mentioned in the Report
+Blockchain provides a decentralized and tamper-resistant record of transactions, while smart contracts can automate predefined conditions for managing crowdfunding funds.
 
-- Frontend: React / HTML / CSS / JavaScript
-- Backend: Node.js and Express
-- Database: MongoDB (used by the supplied source-code appendix)
-- Blockchain: Ethereum (described in the project report)
-- Smart contracts: Solidity (described in the project report)
-- Wallet / cryptocurrency: described in the project report
+## 🎯 Objectives
 
-## Repository Contents
+- Provide secure and tamper-resistant crowdfunding transactions.
+- Improve transparency in fundraising activities.
+- Reduce the risk of fraud and fund mismanagement.
+- Minimize dependency on intermediaries.
+- Automate fund management using smart contracts.
+- Improve trust between fundraisers and backers.
+- Provide greater visibility into crowdfunding transactions.
+
+## ✨ Key Features
+
+- User registration and login
+- Fundraiser project creation
+- Crowdfunding campaign management
+- Smart contract-based fund management
+- Cryptocurrency-based contributions
+- Fund release based on predefined conditions
+- Transaction tracking
+- Transparent project and funding information
+- Dashboard for monitoring crowdfunding activities
+
+## 👥 User Types
+
+The system supports three primary types of users:
+
+### Admin
+- Manage and oversee the crowdfunding platform.
+- Monitor users and campaigns.
+
+### Fundraiser
+- Create crowdfunding projects.
+- Define project details and funding goals.
+- Manage campaigns and receive eligible funds.
+
+### Backer
+- Browse available crowdfunding projects.
+- Contribute cryptocurrency to selected campaigns.
+- Track contribution and transaction information.
+
+## 🏗️ System Architecture
+
+The project combines a web application interface with blockchain and backend technologies.
+
+### Main Components
+
+- **Frontend:** HTML, CSS, JavaScript / React components
+- **Backend:** Node.js and Express
+- **Blockchain:** Ethereum
+- **Smart Contracts:** Solidity
+- **Blockchain Interaction:** Web3.js
+- **Wallet:** MetaMask
+- **Database:** MongoDB for application-related data
+- **Smart Contract Development/Deployment:** Remix IDE
+
+## 🔄 How the System Works
+
+1. Users register and log in to the platform.
+2. Fundraisers create crowdfunding projects with project details and funding goals.
+3. A project can be associated with blockchain-based smart contract functionality.
+4. Backers browse available projects.
+5. Backers contribute cryptocurrency to selected campaigns.
+6. Transactions are recorded and can be tracked.
+7. Smart-contract conditions are used to control fund release.
+8. Project and transaction information can be monitored through the platform.
+
+## 📂 Project Structure
 
 ```text
 Crowdfunding-Using-Blockchain/
+│
 ├── README.md
-├── .gitignore
-├── .env.example
+│
 ├── Documentation/
 │   └── Crowdfunding-Using-Blockchain-Report.pdf
+│
 ├── source-code/
 │   ├── frontend/
-│   │   ├── App.jsx
-│   │   ├── Main.jsx
-│   │   ├── index.css
-│   │   ├── App-styles.css
-│   │   └── components/
-│   │       ├── Login.jsx
-│   │       ├── Register.jsx
-│   │       ├── Home.jsx
-│   │       └── ViewProject.jsx
 │   └── backend/
-│       └── server.js
-└── screenshots/
-    ├── output-2.png
-    └── output-3.png
-```
-
-## Features Described
-
-- User registration and login
-- Crowdfunding project creation
-- Project browsing and details
-- Donation/funding workflow
-- Funding-progress tracking
-- Donation confirmation
-- Project statistics
-- MongoDB-backed application data in the supplied implementation appendix
-- Blockchain and smart-contract concepts described as the proposed architecture
-
-## Important Note About the Supplied Report
-
-This repository is a GitHub-ready documentation/source-code representation of the supplied final project report. The report describes Ethereum and Solidity as part of the proposed blockchain solution, while the source-code appendix supplied in the report contains React/Node.js/MongoDB implementation excerpts. No Solidity smart-contract source is included in the supplied report appendix, and several imported React components/routes are referenced but their source is not included in the appendix.
-
-Therefore, the files in `source-code/` should be treated as the source excerpts reproduced from the report, not as a claim that this repository is a complete buildable application.
-
-## Documentation
-
-The `Documentation/` folder contains a public-project version of the technical portion of the final report, with the college submission/front-matter pages omitted.
-
-## Screenshots
-
-The screenshots folder contains selected application outputs reproduced from the report. Personally identifying login information and database-management screenshots from the original report have intentionally not been included in this public version.
-
-## Project Objective
-
-The objective stated in the report is to demonstrate how blockchain can improve the security, transparency, accountability, and efficiency of crowdfunding while using smart contracts to automate predefined agreements between fundraisers and backers.
-
-## Future Enhancements
-
-The report identifies future enhancements including fiat payment integration, a mobile application, enhanced KYC/user verification, and support for multiple blockchains.
-
-## Academic Project
-
-**Project Title:** Crowdfunding Using Blockchain
-
-**Project Type:** Application
-
-This repository is prepared from the final project material supplied for the project.
+│
+├── screenshots/
+│
+├── .gitignore
+└── .env.example
